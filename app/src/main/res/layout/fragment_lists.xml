@@ -12,6 +12,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#8F8F8F"
         tools:context=".ContactFragment">
 
         <LinearLayout
@@ -20,11 +21,12 @@
             android:orientation="vertical">
 
             <Button
-            android:id="@+id/buttonDelete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="@{()->listsViewModel.onActivityClear()}"
-            android:text="Delete" />
+                android:id="@+id/buttonDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->listsViewModel.onActivityClear()}"
+                android:text="Delete" />
+
             <TextView
                 android:id="@+id/textview"
                 android:layout_width="match_parent"
